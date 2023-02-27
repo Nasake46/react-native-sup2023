@@ -1,5 +1,6 @@
 import { View, Button, Text } from "react-native"
 import { useNavigation } from "@react-navigation/native"
+import LatestChangeItem from "../../Components/LatestChangeItem";
 
 export default function HomeScreen() {
 
@@ -8,9 +9,7 @@ export default function HomeScreen() {
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Home Screen</Text>
-            <Button title="Go to Details" onPress={() => {
-                navigation.navigate('HomeDetail');
-            }}/>
+            <LatestChangeItem></LatestChangeItem>
         </View>
       );
 }
